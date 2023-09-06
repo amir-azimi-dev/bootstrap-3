@@ -8,6 +8,11 @@ $secondary: #fe8c00;
 
 
 // custom reset
+body {
+    font-family: YekanBakh;
+    line-height: 1.6;
+}
+
 a {
     text-decoration: none;
 }
@@ -15,8 +20,31 @@ a {
 ul {
     list-style-type: none;
 }
+
+.svg-container {
+    height: 150px;
+    overflow: hidden;
+    height: 150px;
+    overflow: hidden;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    
+    &.svg-container--bottom {
+        transform: translateY(0.1rem);
+        margin-bottom: 0.1rem;
+    }
+    
+    &.svg-container--top {
+        transform: translateY(-0.1rem);
+        margin-top: 0.1rem;
+    }
+}
+
 // custom styles
 @import "fonts";
 @import "components/mixins";
 @import "components/buttons";
 @import "header";
+@import "hero";

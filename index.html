@@ -23,8 +23,9 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark shadow fixed-top">
+  <!-- header start -->
+  <header class="header shadow fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container">
         <a class="navbar-brand m-0 py-2 fw-bold" href="#">AmirWeb</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -49,11 +50,44 @@
               <a class="nav-link" href="#">درباره‌ی ما</a>
             </li>
           </ul>
-          <a class="btn btn-custom-primary me-4">ورود به اکانت</a>
+          <a class="btn btn-custom-primary">ورود به اکانت</a>
         </div>
       </div>
     </nav>
   </header>
+  <!-- header end -->
+
+  <main class="main">
+    <!-- hero start -->
+    <section class="hero">
+      <div class="container h-100 mb-4">
+        <div class="row flex-row-reverse g-4 h-100 align-items-center">
+          <div class="col-md-8 mx-auto col-lg-5 offset-lg-1">
+            <img class="hero__img w-100" src="assets/images/intro/1.png" alt="hero-image-man">
+          </div>
+          <div class="col-lg-6 text-white">
+            <h1 class="fs-3 fw-bold mb-3">لورم ایپسوم متن ساختگی</h1>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+            <a href="#" class="btn btn-lg btn-custom-primary">لورم ایپسوم</a>
+          </div>
+        </div>
+      </div>
+      <div class="svg-container svg-container--bottom">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+          <path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z"
+          style="stroke: none; fill: #fff;"></path>
+        </svg>
+      </div>
+    </section>
+    <!-- hero end -->
+
+
+    <!-- 
+      <div class="svg-container svg-container--bottom"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+
+      <div class="svg-container svg-container--top"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 271.37,-49.85 500.00,49.85 L500.00,-0.00 L-0.00,-0.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+     -->
+  </main>
 
   <!-- bootstrap -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

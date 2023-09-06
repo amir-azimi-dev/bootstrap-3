@@ -1,0 +1,4 @@
+.hero {
+    @include gradient;
+    padding-top: calc(3.9rem + 2.5rem);
+}

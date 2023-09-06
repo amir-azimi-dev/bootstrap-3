@@ -1,3 +1,7 @@
 .navbar {
     @include gradient;
+
+    .btn-custom-primary {
+        margin-right: 2rem;
+    }
 }

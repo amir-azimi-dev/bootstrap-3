@@ -10,3 +10,16 @@
         border: 0.1rem solid rgba($white, 0.5);
     }  
 }
+
+.btn-custom-outline-primary {
+    background-color: $white;
+    color: $primary;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    border: 0.1rem solid $primary;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }  
+}

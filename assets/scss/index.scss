@@ -43,8 +43,26 @@ ul {
 }
 
 // custom styles
-@import "fonts";
 @import "components/mixins";
 @import "components/buttons";
+@import "components/section__header";
+@import "fonts";
 @import "header";
 @import "hero";
+@import "services";
+
+// utilities
+.text-justify {
+    text-align: justify
+}
+
+.icon {
+    @include gradient;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    line-height: 0;
+    display: inline-block;
+}

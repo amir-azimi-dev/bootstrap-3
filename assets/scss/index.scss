@@ -1,0 +1,22 @@
+// bootstrap variable customization
+$primary: #f83600;
+$secondary: #fe8c00;
+
+// import bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+// custom reset
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+// custom styles
+@import "fonts";
+@import "components/mixins";
+@import "components/buttons";
+@import "header";

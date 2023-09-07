@@ -56,6 +56,7 @@ ul {
 @import "quotations";
 @import "FAQ";
 @import "portfolio";
+@import "footer";
 
 // utilities
 .text-justify {
@@ -74,5 +75,9 @@ ul {
 }
 
 .lh-0 {
-    line-height: 0;
+    line-height: 0 !important;
+}
+
+.ltr {
+    direction: ltr;
 }

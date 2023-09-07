@@ -1,0 +1,37 @@
+.footer {
+    .footer__icon {
+        transition: color 0.15s ease-in-out;
+
+        &:hover {
+            color: $primary !important;
+        }
+    }
+
+    .footer__shape {
+        width: 7rem;
+        height: 0.1rem;
+        background-color: rgba($white, 0.4);
+    }
+
+    .footer__list a {
+        color: $white;
+
+        &:hover {
+            font-weight: bolder;
+        }
+    }
+
+    .copy-rights {
+        color: rgba(#ddd, 0.3) !important;
+    }
+}
+
+@media all and (max-width: 319px) {
+    .footer__list {
+        font-size: 0.8rem;
+
+        a {
+            white-space: nowrap;
+        }
+    }
+}

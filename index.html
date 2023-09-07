@@ -23,6 +23,10 @@
 </head>
 
 <body>
+  <button x-data @click="window.scrollTo(0, 0);" class="sticky-btn btn btn-primary shadow rounded-circle">
+    <i class="bi bi-chevron-up lh-0 text-light"></i>
+  </button>
+
   <!-- header start -->
   <header class="header shadow fixed-top">
     <nav class="navbar navbar-expand-md navbar-dark">
@@ -339,10 +343,11 @@
         </div>
 
         <div class="row mb-4">
-          <div class="col-12 d-flex justify-content-center column-gap-1">
+          <div class="col-12 d-flex justify-content-center column-gap-1 row-gap-1 flex-wrap">
             <button class="btn btn-custom-outline-primary" @click="tabName = 'همه'; setActiveClass($event)">همه</button>
             <template x-for="(tab, index) in tabs" :key="index">
-              <button class="btn btn-custom-outline-primary" :class="{' portfolio__tab--active': tab.category === tabName}" x-text="tab.category"
+              <button class="btn btn-custom-outline-primary"
+                :class="{' portfolio__tab--active': tab.category === tabName}" x-text="tab.category"
                 @click="tabName = tab.category; setActiveClass($event)"></button>
             </template>
           </div>
@@ -369,10 +374,104 @@
       </div>
     </section>
     <!-- portfolio end -->
-
   </main>
 
-  <h1 class="vh-100"></h1>
+  <!-- footer start -->
+  <footer class="footer bg-black text-light pt-3">
+    <div class="container">
+      <div class="d-flex justify-content-md-around flex-wrap column-gap-5 row-gap-3">
+        <div class="d-flex align-items-center column-gap-3">
+          <i class="icon bi bi-telephone-fill fs-3"></i>
+          <div>
+            <p class="my-0 ltr text-end">0910 123 4567</p>
+            <p class="my-0">شنبه تا پنجشنبه، ۸ صبح تا ۶ عصر</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center column-gap-3">
+          <i class="icon bi bi-envelope fs-3"></i>
+          <div>
+            <p class="my-0 ltr text-end">test@gmail.com</p>
+            <p class="my-0">پشتیبانی آنلاین</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center column-gap-3">
+          <i class="icon bi bi-map-fill fs-3"></i>
+          <div>
+            <p class="my-0">لورم ایپسوم</p>
+            <p class="my-0">لورم ایپسوم متن ساختگی</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark text-center my-3 p-3">
+      <div class="container">
+        <div class="row row-gap-3 align-items-center">
+          <div class="col-lg-6">
+            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+          </div>
+          <div class="col-lg-6 me-auto">
+            <div class="socials d-flex justify-content-center column-gap-3">
+              <a href="#"><i class="footer__icon lh-0 bi bi-facebook fs-3 text-light"></i></a>
+              <a href="#"><i class="footer__icon lh-0 bi bi-twitter fs-3 text-light"></i></a>
+              <a href="#"><i class="footer__icon lh-0 bi bi-github fs-3 text-light"></i></a>
+              <a href="#"><i class="footer__icon lh-0 bi bi-linkedin fs-3 text-light"></i></a>
+              <a href="#"><i class="footer__icon lh-0 bi bi-instagram fs-3 text-light"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row row-gap-4">
+        <div class="col-lg-5">
+          <h5 class="footer__title fs-5 fw-bold">AmirWeb</h5>
+          <div class="footer__shape mb-2"></div>
+          <p class="lh-lg">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+          </p>
+        </div>
+        <div class="col-lg-6 col-xl-5 me-lg-auto">
+          <div class="row">
+            <div class="col-6 col-sm-4">
+              <h5 class="footer__title fs-5 fw-bold">محصولات</h5>
+              <div class="footer__shape mb-2"></div>
+              <ul class="footer__list pe-2">
+                <li><a href="#">لورم ایپسوم</a></li>
+                <li><a href="#">لورم ایپسوم</a></li>
+                <li><a href="#">لورم ایپسوم</a></li>
+                <li><a href="#">لورم ایپسوم</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4">
+              <h5 class="footer__title fs-5 fw-bold">خدمات</h5>
+              <div class="footer__shape mb-2"></div>
+              <ul class="footer__list pe-2">
+                <li><a href="#">لورم ایپسوم</a></li>
+                <li><a href="#">لورم ایپسوم</a></li>
+                <li><a href="#">لورم ایپسوم</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4">
+              <h5 class="footer__title fs-5 fw-bold">تماس با ما</h5>
+              <div class="footer__shape mb-2"></div>
+              <ul class="footer__list pe-2">
+                <li><a href="#">لورم ایپسوم</a></li>
+                <li><a href="#">لورم ایپسوم</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy-rights bg-dark text-center py-2">
+      <p class="my-auto">&copy; تمامی حقوق محفوظ است.</p>
+    </div>
+  </footer>
+  <!-- footer end -->
 
   <!-- bootstrap -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

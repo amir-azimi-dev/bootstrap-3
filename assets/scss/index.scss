@@ -1,6 +1,7 @@
 // bootstrap variable customization
 $primary: #f83600;
 $secondary: #fe8c00;
+$accordion-button-focus-box-shadow: none;
 
 // import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -51,6 +52,7 @@ ul {
 @import "hero";
 @import "services";
 @import "quotations";
+@import "FAQ";
 
 // utilities
 .text-justify {

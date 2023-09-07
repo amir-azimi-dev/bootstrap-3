@@ -6,6 +6,8 @@ $accordion-button-focus-box-shadow: none;
 // import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// custom variables
+$transition: all 0.5s ease-in-out;
 
 
 // custom reset
@@ -53,6 +55,7 @@ ul {
 @import "services";
 @import "quotations";
 @import "FAQ";
+@import "portfolio";
 
 // utilities
 .text-justify {

@@ -1,0 +1,20 @@
+.quotations {
+    @include gradient;
+
+    .section__header-shape {
+        background-color: rgba($white, 0.3);
+
+        &::after {
+            display: none !important;
+        }
+    }
+
+    .carousel-item {
+        background-color: rgba($white, 0.8);
+    }
+
+    .quotations__img-container {
+        width: 7rem;
+        height: 7rem;
+    }
+}

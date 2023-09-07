@@ -50,6 +50,7 @@ ul {
 @import "header";
 @import "hero";
 @import "services";
+@import "quotations";
 
 // utilities
 .text-justify {
@@ -65,4 +66,8 @@ ul {
     font-size: 2.5rem;
     line-height: 0;
     display: inline-block;
+}
+
+.lh-0 {
+    line-height: 0;
 }

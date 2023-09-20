@@ -86,4 +86,3 @@ document.addEventListener("alpine:init", () => {
         ]
     }));
 });
-AOS.init();
